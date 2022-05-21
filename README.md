@@ -1,4 +1,4 @@
-# Javascript-Capstone
+# Pokemon-World
 
 ## Description
 
