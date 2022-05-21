@@ -1,0 +1,272 @@
+/* font-family: 'Acme', sans-serif;
+font-family: 'Cinzel', serif; */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  padding-left: 2vw;
+  text-align: center;
+  background-color: #b22222;
+  gap: 10vw;
+}
+
+.poke-counter {
+  color: white;
+  font-family: "Cinzel", serif;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.poke-counter:hover {
+  text-decoration: underline;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  padding: 2.5vw;
+  border: solid grey 2px;
+  width: 100%;
+  background-color: #b22222;
+  color: white;
+  font-family: "Cinzel", serif;
+}
+
+.items-container {
+  padding: 2vw;
+  display: grid;
+  grid-template-columns: 30vw 30vw 30vw;
+  gap: 4vw;
+  margin-bottom: 10vw;
+}
+
+.pokemon-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 30vw;
+}
+
+.pokemon-img {
+  width: 30vw;
+  height: 20vw;
+  margin-bottom: 2vw;
+}
+
+.pokemon-name {
+  font-size: 5vw;
+  margin-bottom: 1vw;
+  font-family: "Acme", sans-serif;
+  color: #b22222;
+}
+
+.likes-counter {
+  margin: 1vw;
+  font-family: "Cinzel", serif;
+  font-weight: 700;
+  font-size: 2.5vw;
+}
+
+.comment {
+  border: groove black 2px;
+  border-radius: 5px;
+  height: 6vw;
+  width: 12vw;
+  text-decoration: none;
+  cursor: pointer;
+  background-color: #b22222;
+  color: whitesmoke;
+  text-align: center;
+  padding-top: 1.5vw;
+  font-size: 2vw;
+  font-weight: 500;
+  font-family: "Cinzel", serif;
+}
+
+.comment:hover {
+  background-color: #ae3333;
+  color: black;
+  border: solid gray 1px;
+}
+
+/* card pop CSS */
+
+.pokemon-pop {
+  display: none;
+}
+
+.fixed-item {
+  position: fixed;
+  background-color: rgba(56, 56, 56, 0.8);
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 1;
+  backdrop-filter: blur(2px);
+}
+
+.body-card {
+  position: absolute;
+  z-index: 2;
+  width: 40%;
+  height: 90vh;
+  background-color: gainsboro;
+  border: solid 10px #ddd520;
+  margin: auto;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  box-shadow:
+    2.8px 2.8px 2.2px rgba(0, 0, 0, 0.02),
+    6.7px 6.7px 5.3px rgba(0, 0, 0, 0.028),
+    12.5px 12.5px 10px rgba(0, 0, 0, 0.035),
+    22.3px 22.3px 17.9px rgba(0, 0, 0, 0.042),
+    41.8px 41.8px 33.4px rgba(0, 0, 0, 0.05),
+    100px 100px 80px rgba(0, 0, 0, 0.07);
+}
+
+.grass {
+  border: solid 10px #228b22;
+}
+
+.fire {
+  border: solid 10px #b22222;
+}
+
+.water {
+  border: solid 10px #4169e1;
+}
+
+.fa-solid {
+  position: absolute;
+  right: 0;
+  padding: 20px;
+}
+
+.poke-img-div {
+  text-align: center;
+  border-bottom: solid 2px rgba(240, 255, 255, 0.5);
+  padding: 5px;
+}
+
+.poke-img-div img {
+  width: 15vw;
+}
+
+.poke-data {
+  margin-top: 1vw;
+}
+
+.poke-data h2 {
+  text-align: center;
+  font-family: 'Acme', sans-serif;
+  font-size: 1.8rem;
+}
+
+.poke-description-card {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  margin: 0.5rem 0;
+}
+
+ul {
+  text-align: center;
+}
+
+.description-title {
+  font-family: "Acme", sans-serif;
+  list-style: none;
+  font-size: 1rem;
+  text-align: center;
+}
+
+.li {
+  font-family: "Cinzel", serif;
+  list-style: none;
+  font-size: 0.9rem;
+}
+
+.display-comment h3 {
+  font-family: 'Acme', sans-serif;
+  text-align: center;
+  padding-bottom: 10px;
+  font-size: 1.2rem;
+}
+
+.comment-line {
+  font-family: 'Cinzel', serif;
+  font-size: 0.8rem;
+  width: 85%;
+  margin: 0 auto;
+}
+
+.comment-title {
+  font-family: 'Acme', sans-serif;
+  text-align: center;
+  margin-top: 10px;
+  padding-bottom: 5px;
+  font-size: 1.2rem;
+}
+
+#comment-form {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin: 1vw auto;
+}
+
+#comment-form input,
+textarea {
+  padding: 5px;
+  margin-bottom: 5px;
+}
+
+.comment-btn {
+  padding: 5px;
+  width: 40%;
+}
+
+@media only screen and (max-width: 600px) {
+  .poke-data h2 {
+    font-size: 1.2rem;
+  }
+
+  .li {
+    font-size: 0.8rem;
+  }
+
+  .display-comment h3 {
+    font-size: 1rem;
+  }
+
+  .comment-line {
+    font-size: 0.7rem;
+  }
+
+  .comment-title {
+    font-size: 1rem;
+  }
+
+  .comment-btn {
+    width: 60%;
+  }
+}
+
+.like-button,
+.like-icon {
+  height: 3vw;
+  width: 3vw;
+  border: none;
+  background-color: inherit;
+  cursor: pointer;
+}
