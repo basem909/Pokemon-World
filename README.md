@@ -36,7 +36,7 @@ To get a local copy up and running follow these simple example steps.
 
 ## Links
 
-[Live Demo Link](https://rega1237.github.io/Javascript-Capstone/) 
+[Live Demo Link](https://basem909.github.io/Pokemon-World/) 
 
 ## Link explanation video:
 
